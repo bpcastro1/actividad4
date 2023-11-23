@@ -1,0 +1,77 @@
+.giro-derecha {
+  animation: giro-derecha 1s ease-in-out;
+}
+
+@keyframes giro-derecha {
+  transform: rotate(90deg) translateY(60px);
+}
+
+#juego {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+mi-domino {
+  position: relative;
+  width: 60px;
+  height: 120px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #000;
+  transition: transform 1s ease-in-out;
+}
+
+mi-domino::before,
+mi-domino::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+mi-domino::before {
+  top: 10px;
+  left: 10px;
+}
+
+mi-domino::after {
+  bottom: 10px;
+  right: 10px;
+}
+
+domino-boton {
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 60px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #eee;
+}
+
+#botones {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+domino-boton {
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 60px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #eee;
+}
